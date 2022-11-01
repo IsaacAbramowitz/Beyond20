@@ -62,6 +62,19 @@
 	"content_scripts": [
 		{
 			"matches": [
+				"*://*.abramowitz_isaac.gitlab.io/mass-roller/*",
+				"file:///C:/Users/isaac/Desktop/mass-roller/index.html"
+			],
+			"css": [
+				"dist/beyond20.css"
+			],
+			"js": [
+				"libs/jquery-3.4.1.min.js",
+				"dist/dndbeyond_massroller.js"
+			]
+		},
+		{
+			"matches": [
 				"*://*.dndbeyond.com/*characters/*",
 				"*://*.dndbeyond.com/characters"
 			],
